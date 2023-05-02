@@ -1,1 +1,21 @@
-<p>extrato works!</p>
+<section class="container">
+    <h2 class="titulo">Transferencias</h2>
+    <table class="tabela">
+        <thead class="tabela__cabecalho">
+            <th class="tabela__cabecalho__conteudo">Data</th>
+            <th class="tabela__cabecalho__conteudo">Valor</th>
+            <th class="tabela__cabecalho__conteudo">Destino</th>
+        </thead>
+        <tbody *ngIf="transferencias?.length > 0; else listaVazia">
+            <tr class="tabela__linha" *ngFor="let transfere of transferencias">
+                <td class="tabela__conteudo">{{ transfere?.data | date: 'dd/MM/yyyy hh:mm' }}</td>
+                <td class="tabela__conteudo">{{ transfere?.valor | currency: 'BRL' }}</td>
+                <td class="tabela__conteudo">{{ transfere?.destino }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ng-template #listaVazia>
+        <p>Nenhuma transferencia</p>
+    </ng-template>
+</section>

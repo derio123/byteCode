@@ -1,14 +1,14 @@
 <section class="container">
     <form class="formulario" (ngSubmit)="transferir()">
-        <h1 class="formulario_title">{{title2}}</h1>
+        <h1 class="formulario__title">{{title2}}</h1>
         <div class="form-field">
-            <label class="form-field_label" for="valor">Valor</label>
-            <input class="form-field_input" n id="valor" type="text" name="valor" [(ngModel)]="valor"/>
+            <label class="form-field__label" for="valor">Valor</label>
+            <input class="form-field__input" n id="valor" type="number" name="valor" [(ngModel)]="valor"/>
         </div>
 
         <div class="form-field">
-            <label class="form-field_label" for="destino">Destino</label>
-            <input class="form-field_input" id="destino" type="text" name="destino" [(ngModel)]="destino"/>
+            <label class="form-field__label" for="destino">Destino</label>
+            <input class="form-field__input" id="destino" type="text" name="destino" [(ngModel)]="destino"/>
         </div>
 
         <div class="botao-wapper">
