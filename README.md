@@ -1,6 +1,12 @@
 # Bytebank
 
-Este projeto foi criado Angular 10.1.6.
+#### Este projeto foi criado Angular 10.1.6.
+
+<div align='center'>
+  <div>
+    <img height='300px' width='auto' src='src/assets/imgs/bytecode.jpeg'/>
+  </div>
+</div>
 
 ## Para instalar o projeto veja algumas orientações abaixos:
 - Precisa instalar o nodejs lts 10.24:
